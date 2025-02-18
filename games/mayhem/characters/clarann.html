@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clarann, the Ascended Twilight</title>
+    <link rel="icon" type="image/png" href="../../../img/Mayhem/mayhem_logo_main.png">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.7/css/pico.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/mayhem_style.css">
+    <link rel="stylesheet" href="../../../css/mayhem_char.css">
+    <link rel="stylesheet" href="../../../css/characters/clarann.css">
+
+    <script src="../../../scripts/main_script.js"></script>
+    <script src="../../../scripts/see_more.js"></script>
+    <script src="../../../scripts/characters/clarann.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="nav-left">
+                <a href="../../mayhem.html">Home</a>
+                <a href="../games/mayhem/characters.html">Characters</a>
+            </div>
+    
+            <div class="logo">
+                <a href="../../mayhem.html"><img src="../../../img/Mayhem/mayhem_logo_main.png" alt="The Twilight Logo" /></a>
+            </div>
+    
+            <div class="nav-right">
+                <a href="../../mayhem.html#newswire">Newswire</a>
+                <a href="../legacy.html">Legacy Version</a>
+            </div>
+    
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav> 
+
+        <ul class="nav-links-mobile" id="mobile-menu">
+            <li><a href="../../mayhem.html">Home</a></li>
+            <li><a href="../games/mayhem/characters.html">Characters</a></li>
+            <li><a href="../../mayhem.html#newswire">Newswire</a></li>
+            <li><a href="../legacy.html">Legacy Version</a></li>
+        </ul>
+
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="../../../img/Mayhem/splash_arts/clarann.png" alt="Your Image">
+                <div class="image-overlay"></div>
+                <div class="alias-char">— THE ASCENDED TWILIGHT —</div>
+                <div class="title-char">CLARANN</div>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="info-left">
+                <h3>— DIFFICULTY —</h3>
+                <div class="difficulty">
+                    <span class="level active beginner">EASY</span>
+                    <span class="level intermediate">NEUTRAL</span>
+                    <span class="level advanced">HARD</span>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="info-right">
+                <h3>— DESCRIPTION —</h3>
+                <p style="color: white; font-size: 17px;" id="character-description">
+                    The deity who holds conflicts between the Solarians and Lunarians, and the first deity to see if you climb the mountain. Those who climbs to the summit will grant the power of deity, according to the doctrine.
+                    <!-- <span id="dots">...</span>
+                    <span id="more-text" style="display: none;">
+                        Now he uses this power to exterminate all infernal beasts, and is continuing to serve his new duties until all beasts are gone. Blazen is one of the most powerful pyrobender serving under the Pyrocism faction, a faction created by other pyrobenders to use their abilities to defeat the beasts, and to finish the invasion with their victory.
+                    </span>
+                    <span id="see-more-less" class="see-more-btn" onclick="toggleDescription()"> See More</span> -->
+                </p>
+            </div>
+        </div>
+
+        <div class="abilities-container">
+            <div class="abilities-left">
+                <h3>— ABILITIES —</h3>
+                <button class="ability-btn active" onclick="showAbility('Q')">
+                    <svg fill="#000000" viewBox="0 0 24 24" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)matrix(1, 0, 0, 1, 0, 0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M12 11.8c1-.4.7-1.8 0-2.4-1.1-.9-2.7-.4-3.4.8-1.5 2.4.9 5 3.4 4.9 2.7-.2 4.3-2.9 3.7-5.4-.7-3-3.9-4.5-6.7-3.6-2.6.8-4.2 3.5-4 6.2.3 3 2.6 5.4 5.5 5.9 2.8.5 5.7-.8 7.2-3.2.7-1.1 1.2-2.4 1.2-3.8 0-.5.5-1 1.1-.9.8 0 1 .8.9 1.4-.4 4.7-4.5 8.6-9.3 8.6-5.9 0-10.5-6.2-8-11.8 2.5-5.4 10.3-6.5 13.3-1.2 1.5 2.5 1.2 5.8-.9 7.9-2 2-5.3 2.4-7.7.7-2.2-1.6-2.9-4.9-1.1-7.2 1.7-2.3 5.5-2.4 7 .2 1.1 1.9 0 5.2-2.5 4.9-1.6 0-3-1.7-2.1-3.2.6-.9 1.9-.6 2.3.1.2.8.1 1.1.1 1.1z"></path>
+                        </g>
+                    </svg>
+                    Call of the Divine
+                </button>
+                <button class="ability-btn" onclick="showAbility('W')">
+                    <svg fill="#000000" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                        <path d="M221.65723,34.34326A8.00246,8.00246,0,0,0,216,32h-.02539l-63.79883.20117A8.00073,8.00073,0,0,0,146.0332,35.106L75.637,120.32275,67.31348,111.999A16.02162,16.02162,0,0,0,44.68555,112L32.001,124.68555A15.99888,15.99888,0,0,0,32,147.31348l20.88672,20.88769L22.94531,198.14258a16.01777,16.01777,0,0,0,.001,22.62695l12.28418,12.28418a16.00007,16.00007,0,0,0,22.62793,0L87.79883,203.1123,108.68652,224.001A16.02251,16.02251,0,0,0,131.31445,224L143.999,211.31445A15.99888,15.99888,0,0,0,144,188.68652l-8.32324-8.32324,85.21679-70.39648a8.00125,8.00125,0,0,0,2.90528-6.14258L224,40.02539A8.001,8.001,0,0,0,221.65723,34.34326Zm-13.84668,65.67822-83.49829,68.97706L111.314,156l54.34327-54.34277a8.00053,8.00053,0,0,0-11.31446-11.31446L100,144.686,87.00195,131.6875,155.97852,48.189l51.99609-.16357Z"></path>
+                    </svg>
+                    Lightbringer
+                </button>
+                <button class="ability-btn" onclick="showAbility('E')">
+                    <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g><polygon class="st0" points="512,255.996 448.702,204.365 477.704,128.003 397.063,114.933 384,34.3 307.639,63.302 256,0.003 204.361,63.302 128.007,34.3 114.937,114.933 34.303,128.003 63.298,204.365 0,255.996 63.298,307.628 34.303,383.997 114.937,397.066 128.007,477.7 204.361,448.698 256,511.997 307.639,448.698 384,477.7 397.063,397.066 477.704,383.997 448.702,307.628 "></polygon></g>
+                        </g>
+                    </svg>
+                    Radiance
+                </button>
+                <button class="ability-btn" onclick="showAbility('R')">
+                    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M30.9,12.7C30.8,12.3,30.4,12,30,12h-9.3l-3.8-9.7C16.8,2,16.4,1.7,16,1.7S15.2,2,15.1,2.3L11.3,12H2 c-0.4,0-0.8,0.3-0.9,0.7c-0.1,0.4,0,0.9,0.3,1.1L9,19.5l-2.6,9.2c-0.1,0.4,0,0.8,0.4,1.1c0.3,0.2,0.8,0.3,1.1,0l8.1-5.3l8.1,5.3 c0.2,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2c0.3-0.2,0.5-0.7,0.4-1.1L23,19.5l7.6-5.7C30.9,13.5,31.1,13.1,30.9,12.7z M15,18 c0,0.6-0.4,1-1,1s-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1V18z M19,18c0,0.6-0.4,1-1,1s-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1V18z "></path>
+                        </g>
+                    </svg>
+                    Ascension
+                </button>
+            </div>
+            <div class="divider"></div>
+            <div class="abilities-right">
+                <h2 id="ability-title">Call of the Divine</h2>
+                <p style="color: white; font-size: 17px;" id="ability-description">
+                    Calls the divine and strikes forward dealing damage and stuns for one round by 10%, and 5% when empowered.
+                </p>
+            </div>            
+        </div>
+
+        <div class="skins-container">
+            <div class="skins-left">
+                <h3>— SKINS —</h3>
+                <button class="skin-btn active" onclick="showSkin(1)">
+                    Base Clarann
+                </button>
+                <!-- <button class="skin-btn" onclick="showSkin(2)">
+                    Skin 2
+                </button>
+                <button class="skin-btn" onclick="showSkin(3)">
+                    Skin 3
+                </button>
+                <button class="skin-btn" onclick="showSkin(4)">
+                    Skin 4
+                </button> -->
+            </div>
+            <div class="divider"></div>
+            <div class="skins-right">
+                <img id="skin-img" src="../../../img/Mayhem/splash_arts/clarann.png" alt="Skin 1" />
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="../characters/charpot.html" class="page-btn page-1">Charpot</a>
+            <a href="../characters.html" class="page-btn back-btn">Back to Character List</a>
+            <a href="../characters/c'vad.html" class="page-btn page-2">C'vad</a>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="copyright">&copy; 2024 The Twilight.<br>All rights reserved.</span>
+            <img src="../../../img/logo.png" alt="The Twilight Logo" class="footer-logo" />
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+</div>
+
+</body>
+
+</html>

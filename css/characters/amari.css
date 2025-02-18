@@ -1,0 +1,66 @@
+.ability-btn {
+    width: 30%;  /* Decrease the button width */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #FA00F2, #D900F0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;  /* Center button horizontally */
+}
+
+.ability-btn:hover {
+    background: linear-gradient(135deg, #D900F0, #FA00F2);
+    transform: translateY(-2px);
+}
+
+.ability-btn.active {
+    background: linear-gradient(135deg, #F400C1, #FA00F2);
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 4px 30px #FF007F;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.ability-btn {
+    width: 80%;
+}
+
+.skin-btn {
+    width: 40%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #FF00A1, #FF007F);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skin-btn:hover {
+    background: linear-gradient(135deg, #FF007F, #FF00A1);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px #FF007F;
+}
+
+.skin-btn.active {
+    background: linear-gradient(135deg, #F400C1, #FF00A1);
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 4px 30px #FF007F;
+    animation: glowing 1.5s infinite alternate;
+}

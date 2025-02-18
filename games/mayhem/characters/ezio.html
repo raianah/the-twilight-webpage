@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ezio, the Sand Snitch</title>
+    <link rel="icon" type="image/png" href="../../../img/Mayhem/mayhem_logo_main.png">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.7/css/pico.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/mayhem_style.css">
+    <link rel="stylesheet" href="../../../css/mayhem_char.css">
+    <link rel="stylesheet" href="../../../css/characters/ezio.css">
+
+    <script src="../../../scripts/main_script.js"></script>
+    <script src="../../../scripts/see_more.js"></script>
+    <script src="../../../scripts/characters/ezio.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="nav-left">
+                <a href="../../mayhem.html">Home</a>
+                <a href="../games/mayhem/characters.html">Characters</a>
+            </div>
+    
+            <div class="logo">
+                <a href="../../mayhem.html"><img src="../../../img/Mayhem/mayhem_logo_main.png" alt="The Twilight Logo" /></a>
+            </div>
+    
+            <div class="nav-right">
+                <a href="../../mayhem.html#newswire">Newswire</a>
+                <a href="../legacy.html">Legacy Version</a>
+            </div>
+    
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav> 
+
+        <ul class="nav-links-mobile" id="mobile-menu">
+            <li><a href="../../mayhem.html">Home</a></li>
+            <li><a href="../games/mayhem/characters.html">Characters</a></li>
+            <li><a href="../../mayhem.html#newswire">Newswire</a></li>
+            <li><a href="../legacy.html">Legacy Version</a></li>
+        </ul>
+
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="../../../img/Mayhem/splash_arts/ezio.png" alt="Your Image">
+                <div class="image-overlay"></div>
+                <div class="alias-char">— THE SAND SNITCH —</div>
+                <div class="title-char">EZIO</div>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="info-left">
+                <h3>— DIFFICULTY —</h3>
+                <div class="difficulty">
+                    <span class="level beginner">EASY</span>
+                    <span class="level intermediate">NEUTRAL</span>
+                    <span class="level active advanced">HARD</span>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="info-right">
+                <h3>— DESCRIPTION —</h3>
+                <p style="color: white; font-size: 17px;" id="character-description">
+                    A young boy who loves to take adventures into temples, abandoned kingdoms and other historical sites. Ezio was once ventured into the depths of a cursed sand temple, and obtained a amulet that is cursed.
+                    <span id="dots">...</span>
+                    <span id="more-text" style="display: none;">
+                        The mist living in the artifact consumed his body gaining himself powers of the cursed.<br><br>While the curse continue to devour the boy's soul, Ezio doesn't seem to care about it, and continued taking trips to sites with historical artifacts.
+                    </span>
+                    <span id="see-more-less" class="see-more-btn" onclick="toggleDescription()"> See More</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="abilities-container">
+            <div class="abilities-left">
+                <h3>— ABILITIES —</h3>
+                <button class="ability-btn active" onclick="showAbility('P')">
+                    <svg fill="#000000" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M8,104a8,8,0,0,1,4.03125-6.94629l112-64a8.00411,8.00411,0,0,1,7.9375,0l112,64a8.00024,8.00024,0,0,1,0,13.89258l-112,64a8.00091,8.00091,0,0,1-7.9375,0l-112-64A8,8,0,0,1,8,104Zm228.03125,33.05371L128,198.78613,19.96875,137.05371a8.00012,8.00012,0,0,0-7.9375,13.89258l112,64a8.00091,8.00091,0,0,0,7.9375,0l112-64a8.00012,8.00012,0,0,0-7.9375-13.89258Z"></path>
+                        </g>
+                    </svg>
+                    PASSIVE: Cursed Fortune
+                </button>
+                <button class="ability-btn" onclick="showAbility('Q')">
+                    <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="wave" class="icon glyph">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M16.5,14a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,12a1,1,0,0,1,0-2,4,4,0,0,1,2.91,1.25,2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,10a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,14Z"></path>
+                            <path d="M16.5,20a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,18a1,1,0,0,1,0-2,4,4,0,0,1,2.91,1.25,2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,16a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,20Zm0-12a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,6,1,1,0,0,1,3,4,4,4,0,0,1,5.91,5.25a2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,4a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,8Z"></path>
+                        </g>
+                    </svg>
+                    Sharp Edge
+                </button>
+                <button class="ability-btn" onclick="showAbility('W')">
+                    <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g><polygon class="st0" points="512,255.996 448.702,204.365 477.704,128.003 397.063,114.933 384,34.3 307.639,63.302 256,0.003 204.361,63.302 128.007,34.3 114.937,114.933 34.303,128.003 63.298,204.365 0,255.996 63.298,307.628 34.303,383.997 114.937,397.066 128.007,477.7 204.361,448.698 256,511.997 307.639,448.698 384,477.7 397.063,397.066 477.704,383.997 448.702,307.628 "></polygon></g>
+                        </g>
+                    </svg>
+                    Cursed Artifact
+                </button>
+                <button class="ability-btn" onclick="showAbility('E')">
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M10.7071 1.2929L12 0L16 4L14.7071 5.2929L15.9571 6.54291L14.5429 7.95712L13.5429 6.95712L11.848 8.65203C11.9474 9.08533 12 9.53654 12 10C12 13.3137 9.31371 16 6 16C2.68629 16 0 13.3137 0 10C0 6.68631 2.68629 4.00001 6 4.00001C6.46348 4.00001 6.91468 4.05257 7.34798 4.15203L9.04289 2.45712L8.04289 1.45712L9.45711 0.0429077L10.7071 1.2929Z"></path>
+                        </g>
+                    </svg>
+                    Scavenge
+                </button>
+                <button class="ability-btn" onclick="showAbility('R')">
+                    <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g><polygon class="st0" points="512,255.996 448.702,204.365 477.704,128.003 397.063,114.933 384,34.3 307.639,63.302 256,0.003 204.361,63.302 128.007,34.3 114.937,114.933 34.303,128.003 63.298,204.365 0,255.996 63.298,307.628 34.303,383.997 114.937,397.066 128.007,477.7 204.361,448.698 256,511.997 307.639,448.698 384,477.7 397.063,397.066 477.704,383.997 448.702,307.628 "></polygon></g>
+                        </g>
+                    </svg>
+                    Sand Blow
+                </button>
+            </div>
+            <div class="divider"></div>
+            <div class="abilities-right">
+                <h2 id="ability-title">Cursed Fortune</h2>
+                <p style="color: white; font-size: 17px;" id="ability-description">
+                    Lets you earn +Luck Points for unlocking Scavenge.
+                </p>
+            </div>            
+        </div>
+
+        <div class="skins-container">
+            <div class="skins-left">
+                <h3>— SKINS —</h3>
+                <button class="skin-btn active" onclick="showSkin(1)">
+                    Base Ezio
+                </button>
+                <!-- <button class="skin-btn" onclick="showSkin(2)">
+                    Skin 2
+                </button>
+                <button class="skin-btn" onclick="showSkin(3)">
+                    Skin 3
+                </button>
+                <button class="skin-btn" onclick="showSkin(4)">
+                    Skin 4
+                </button> -->
+            </div>
+            <div class="divider"></div>
+            <div class="skins-right">
+                <img id="skin-img" src="../../../img/Mayhem/splash_arts/ezio.png" alt="Skin 1" />
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="../characters/eunar.html" class="page-btn page-1">Eunar</a>
+            <a href="../characters.html" class="page-btn back-btn">Back to Character List</a>
+            <a href="../characters/fewn.html" class="page-btn page-2">Fewn</a>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="copyright">&copy; 2024 The Twilight.<br>All rights reserved.</span>
+            <img src="../../../img/logo.png" alt="The Twilight Logo" class="footer-logo" />
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+</div>
+
+</body>
+
+</html>

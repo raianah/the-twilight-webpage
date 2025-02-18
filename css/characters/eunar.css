@@ -1,0 +1,63 @@
+.ability-btn {
+    width: 80%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #87CEEB, #5BAFD4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.ability-btn:hover {
+    background: linear-gradient(135deg, #5BAFD4, #87CEEB);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px #A0D8EF;
+}
+
+.ability-btn.active {
+    background: linear-gradient(135deg, #A0D8EF, #5BAFD4);
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 4px 30px #A0D8EF;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.skin-btn {
+    width: 40%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #87CEEB, #4B9BC6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px #A0D8EF;
+}
+
+.skin-btn:hover {
+    background: linear-gradient(135deg, #4B9BC6, #87CEEB);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px #A0D8EF;
+}
+
+.skin-btn.active {
+    background: linear-gradient(135deg, #C6E6F5, #4B9BC6);
+    color: black;
+    transform: scale(1.05);
+    animation: pulse 1.5s infinite alternate;
+    box-shadow: 0 4px 30px #A0D8EF;
+}

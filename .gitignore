@@ -1,0 +1,56 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Build directories
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Compiled files
+*.out
+*.class
+
+# Coverage reports
+coverage/
+
+# Miscellaneous
+*.bak
+*.old
+*.orig
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# VSCode specific
+.vscode/
+
+# Python virtual environments
+venv/
+env/

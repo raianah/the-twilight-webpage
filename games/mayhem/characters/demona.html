@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demona, the Radiated Gladiator</title>
+    <link rel="icon" type="image/png" href="../../../img/Mayhem/mayhem_logo_main.png">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.7/css/pico.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/mayhem_style.css">
+    <link rel="stylesheet" href="../../../css/mayhem_char.css">
+    <link rel="stylesheet" href="../../../css/characters/demona.css">
+
+    <script src="../../../scripts/main_script.js"></script>
+    <script src="../../../scripts/see_more.js"></script>
+    <script src="../../../scripts/characters/demona.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="nav-left">
+                <a href="../../mayhem.html">Home</a>
+                <a href="../games/mayhem/characters.html">Characters</a>
+            </div>
+    
+            <div class="logo">
+                <a href="../../mayhem.html"><img src="../../../img/Mayhem/mayhem_logo_main.png" alt="The Twilight Logo" /></a>
+            </div>
+    
+            <div class="nav-right">
+                <a href="../../mayhem.html#newswire">Newswire</a>
+                <a href="../legacy.html">Legacy Version</a>
+            </div>
+    
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav> 
+
+        <ul class="nav-links-mobile" id="mobile-menu">
+            <li><a href="../../mayhem.html">Home</a></li>
+            <li><a href="../games/mayhem/characters.html">Characters</a></li>
+            <li><a href="../../mayhem.html#newswire">Newswire</a></li>
+            <li><a href="../legacy.html">Legacy Version</a></li>
+        </ul>
+
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="../../../img/Mayhem/splash_arts/demona.png" alt="Your Image">
+                <div class="image-overlay"></div>
+                <div class="alias-char">— THE RADIATED GLADIATOR —</div>
+                <div class="title-char">DEMONA</div>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="info-left">
+                <h3>— DIFFICULTY —</h3>
+                <div class="difficulty">
+                    <span class="level active beginner">EASY</span>
+                    <span class="level intermediate">NEUTRAL</span>
+                    <span class="level advanced">HARD</span>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="info-right">
+                <h3>— DESCRIPTION —</h3>
+                <p style="color: white; font-size: 17px;" id="character-description">
+                    A former warrior in her old, demolished town. These she called "intruders" have been raided her town, killed all elders, and kidnapped her. As she grew up, she became the gladiator to take avenge from what was lost.
+                    <span id="dots">...</span>
+                    <span id="more-text" style="display: none;">
+                        She ruthlessly slaughter every opponent she has. Outside her line of work, she became an assassin to murder the elites; the leaders who commanded the army to invade their land. Keeping her gem of life in her pouch, she will defend the last land and the last line of the tribe.
+                    </span>
+                    <span id="see-more-less" class="see-more-btn" onclick="toggleDescription()"> See More</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="abilities-container">
+            <div class="abilities-left">
+                <h3>— ABILITIES —</h3>
+                <button class="ability-btn active" onclick="showAbility('P')">
+                    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M30.9,12.7C30.8,12.3,30.4,12,30,12h-9.3l-3.8-9.7C16.8,2,16.4,1.7,16,1.7S15.2,2,15.1,2.3L11.3,12H2 c-0.4,0-0.8,0.3-0.9,0.7c-0.1,0.4,0,0.9,0.3,1.1L9,19.5l-2.6,9.2c-0.1,0.4,0,0.8,0.4,1.1c0.3,0.2,0.8,0.3,1.1,0l8.1-5.3l8.1,5.3 c0.2,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4-0.1,0.6-0.2c0.3-0.2,0.5-0.7,0.4-1.1L23,19.5l7.6-5.7C30.9,13.5,31.1,13.1,30.9,12.7z M15,18 c0,0.6-0.4,1-1,1s-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1V18z M19,18c0,0.6-0.4,1-1,1s-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1V18z "></path>
+                        </g>
+                    </svg>
+                    PASSIVE: Absorb
+                </button>
+                <button class="ability-btn" onclick="showAbility('Q')">
+                    <svg fill="#000000" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                        <path d="M221.65723,34.34326A8.00246,8.00246,0,0,0,216,32h-.02539l-63.79883.20117A8.00073,8.00073,0,0,0,146.0332,35.106L75.637,120.32275,67.31348,111.999A16.02162,16.02162,0,0,0,44.68555,112L32.001,124.68555A15.99888,15.99888,0,0,0,32,147.31348l20.88672,20.88769L22.94531,198.14258a16.01777,16.01777,0,0,0,.001,22.62695l12.28418,12.28418a16.00007,16.00007,0,0,0,22.62793,0L87.79883,203.1123,108.68652,224.001A16.02251,16.02251,0,0,0,131.31445,224L143.999,211.31445A15.99888,15.99888,0,0,0,144,188.68652l-8.32324-8.32324,85.21679-70.39648a8.00125,8.00125,0,0,0,2.90528-6.14258L224,40.02539A8.001,8.001,0,0,0,221.65723,34.34326Zm-13.84668,65.67822-83.49829,68.97706L111.314,156l54.34327-54.34277a8.00053,8.00053,0,0,0-11.31446-11.31446L100,144.686,87.00195,131.6875,155.97852,48.189l51.99609-.16357Z"></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M16.2857 20C19.4416 20 22 17.4717 22 14.3529C22 11.8811 20.393 9.78024 18.1551 9.01498C17.8371 6.19371 15.4159 4 12.4762 4C9.32028 4 6.7619 6.52827 6.7619 9.64706C6.7619 10.3369 6.88706 10.9978 7.11616 11.6089C6.8475 11.5567 6.56983 11.5294 6.28571 11.5294C3.91878 11.5294 2 13.4256 2 15.7647C2 18.1038 3.91878 20 6.28571 20H16.2857Z"></path>
+                        </g>
+                    </svg>
+                    Dancing Rage
+                </button>
+                <button class="ability-btn" onclick="showAbility('W')">
+                    <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <path class="st0" d="M256.001,0h-0.002c0,0-211.205,134.961-211.205,300.793c0,58.324,23.64,111.125,61.859,149.346 c26.277,26.277,59.445,45.662,96.562,55.212c16.871,4.341,34.559,6.65,52.783,6.65h0.002c18.225,0,35.912-2.308,52.783-6.65 c37.115-9.55,70.283-28.934,96.561-55.212c38.22-38.221,61.861-91.022,61.861-149.346C467.206,134.961,256.001,0,256.001,0z M395.708,353.274c-13-2.578-21.449-15.207-18.871-28.211c1.574-7.922,2.371-16.086,2.371-24.27c0-17.207-4.262-35.82-12.66-55.32 c-7.769-18.02-19.117-36.934-33.73-56.215c-5.508-7.27-11.547-14.672-17.941-22c-8.715-9.988-7.684-25.149,2.301-33.864 c10-8.711,25.156-7.676,33.863,2.301c7.117,8.156,13.859,16.422,20.031,24.57c16.949,22.363,30.258,44.637,39.555,66.211 c11.004,25.535,16.582,50.539,16.582,74.316c0,11.313-1.106,22.621-3.285,33.614c-2.27,11.422-12.297,19.332-23.516,19.332 C398.856,353.738,397.286,353.59,395.708,353.274z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    Gem of Life
+                </button>
+                <button class="ability-btn" onclick="showAbility('E')">
+                    <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="wave" class="icon glyph">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M16.5,14a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,12a1,1,0,0,1,0-2,4,4,0,0,1,2.91,1.25,2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,10a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,14Z"></path>
+                            <path d="M16.5,20a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,18a1,1,0,0,1,0-2,4,4,0,0,1,2.91,1.25,2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,16a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,20Zm0-12a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,6,1,1,0,0,1,3,4,4,4,0,0,1,5.91,5.25a2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,4a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,8Z"></path>
+                        </g>
+                    </svg>
+                    Agile Strike
+                </button>
+                <button class="ability-btn" onclick="showAbility('R')">
+                    <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g><polygon class="st0" points="512,255.996 448.702,204.365 477.704,128.003 397.063,114.933 384,34.3 307.639,63.302 256,0.003 204.361,63.302 128.007,34.3 114.937,114.933 34.303,128.003 63.298,204.365 0,255.996 63.298,307.628 34.303,383.997 114.937,397.066 128.007,477.7 204.361,448.698 256,511.997 307.639,448.698 384,477.7 397.063,397.066 477.704,383.997 448.702,307.628 "></polygon></g>
+                        </g>
+                    </svg>
+                    Blink Execution
+                </button>
+            </div>
+            <div class="divider"></div>
+            <div class="abilities-right">
+                <h2 id="ability-title">Absorb</h2>
+                <p style="color: white; font-size: 17px;" id="ability-description">
+                    Demona's gem of life absorbs enemy damage, and uses it in her next attack as bonus damage.
+                </p>
+            </div>            
+        </div>
+
+        <div class="skins-container">
+            <div class="skins-left">
+                <h3>— SKINS —</h3>
+                <button class="skin-btn active" onclick="showSkin(1)">
+                    Base Demona
+                </button>
+                <button class="skin-btn" onclick="showSkin(2)">
+                    Soulblade Demona
+                </button>
+                <!-- <button class="skin-btn" onclick="showSkin(3)">
+                    Skin 3
+                </button>
+                <button class="skin-btn" onclick="showSkin(4)">
+                    Skin 4
+                </button> -->
+            </div>
+            <div class="divider"></div>
+            <div class="skins-right">
+                <img id="skin-img" src="../../../img/Mayhem/splash_arts/demona.png" alt="Skin 1" />
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="../characters/c'vad.html" class="page-btn page-1">C'vad</a>
+            <a href="../characters.html" class="page-btn back-btn">Back to Character List</a>
+            <a href="../characters/eunar.html" class="page-btn page-2">Eunar</a>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="copyright">&copy; 2024 The Twilight.<br>All rights reserved.</span>
+            <img src="../../../img/logo.png" alt="The Twilight Logo" class="footer-logo" />
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+</div>
+
+</body>
+
+</html>

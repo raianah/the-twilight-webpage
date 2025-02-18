@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eunar, the Powerkeeper</title>
+    <link rel="icon" type="image/png" href="../../../img/Mayhem/mayhem_logo_main.png">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.7/css/pico.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/mayhem_style.css">
+    <link rel="stylesheet" href="../../../css/mayhem_char.css">
+    <link rel="stylesheet" href="../../../css/characters/eunar.css">
+
+    <script src="../../../scripts/main_script.js"></script>
+    <script src="../../../scripts/see_more.js"></script>
+    <script src="../../../scripts/characters/eunar.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="nav-left">
+                <a href="../../mayhem.html">Home</a>
+                <a href="../games/mayhem/characters.html">Characters</a>
+            </div>
+    
+            <div class="logo">
+                <a href="../../mayhem.html"><img src="../../../img/Mayhem/mayhem_logo_main.png" alt="The Twilight Logo" /></a>
+            </div>
+    
+            <div class="nav-right">
+                <a href="../../mayhem.html#newswire">Newswire</a>
+                <a href="../legacy.html">Legacy Version</a>
+            </div>
+    
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav> 
+
+        <ul class="nav-links-mobile" id="mobile-menu">
+            <li><a href="../../mayhem.html">Home</a></li>
+            <li><a href="../games/mayhem/characters.html">Characters</a></li>
+            <li><a href="../../mayhem.html#newswire">Newswire</a></li>
+            <li><a href="../legacy.html">Legacy Version</a></li>
+        </ul>
+
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="../../../img/Mayhem/splash_arts/eunar.png" alt="Your Image">
+                <div class="image-overlay"></div>
+                <div class="alias-char">— THE POWERKEEPER —</div>
+                <div class="title-char">EUNAR</div>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="info-left">
+                <h3>— DIFFICULTY —</h3>
+                <div class="difficulty">
+                    <span class="level active beginner">EASY</span>
+                    <span class="level intermediate">NEUTRAL</span>
+                    <span class="level advanced">HARD</span>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="info-right">
+                <h3>— DESCRIPTION —</h3>
+                <p style="color: white; font-size: 17px;" id="character-description">
+                    Eunar is the angel of purification, the chosen one to purify all souls of damned and other infected by the devil's wish and such.
+                    <span id="dots">...</span>
+                    <span id="more-text" style="display: none;">
+                        She became the angel of purification after absorbing quarter of the Twilight's inner power, granting herself the ability to purify souls and defend the heavens against the rising infernals.
+                    </span>
+                    <span id="see-more-less" class="see-more-btn" onclick="toggleDescription()"> See More</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="abilities-container">
+            <div class="abilities-left">
+                <h3>— ABILITIES —</h3>
+                <button class="ability-btn active" onclick="showAbility('Q')">
+                    <svg fill="#000000" viewBox="0 0 24 24" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)matrix(1, 0, 0, 1, 0, 0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M12 11.8c1-.4.7-1.8 0-2.4-1.1-.9-2.7-.4-3.4.8-1.5 2.4.9 5 3.4 4.9 2.7-.2 4.3-2.9 3.7-5.4-.7-3-3.9-4.5-6.7-3.6-2.6.8-4.2 3.5-4 6.2.3 3 2.6 5.4 5.5 5.9 2.8.5 5.7-.8 7.2-3.2.7-1.1 1.2-2.4 1.2-3.8 0-.5.5-1 1.1-.9.8 0 1 .8.9 1.4-.4 4.7-4.5 8.6-9.3 8.6-5.9 0-10.5-6.2-8-11.8 2.5-5.4 10.3-6.5 13.3-1.2 1.5 2.5 1.2 5.8-.9 7.9-2 2-5.3 2.4-7.7.7-2.2-1.6-2.9-4.9-1.1-7.2 1.7-2.3 5.5-2.4 7 .2 1.1 1.9 0 5.2-2.5 4.9-1.6 0-3-1.7-2.1-3.2.6-.9 1.9-.6 2.3.1.2.8.1 1.1.1 1.1z"></path>
+                        </g>
+                    </svg>
+                    Hammer of Guilt
+                </button>
+                <button class="ability-btn" onclick="showAbility('W')">
+                    <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="wave" class="icon glyph">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M16.5,14a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,12a1,1,0,0,1,0-2,4,4,0,0,1,2.91,1.25,2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,10a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,14Z"></path>
+                            <path d="M16.5,20a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,18a1,1,0,0,1,0-2,4,4,0,0,1,2.91,1.25,2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,16a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,20Zm0-12a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,6,1,1,0,0,1,3,4,4,4,0,0,1,5.91,5.25a2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,4a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,8Z"></path>
+                        </g>
+                    </svg>
+                    Destiny
+                </button>
+                <button class="ability-btn" onclick="showAbility('E')">
+                    <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g><polygon class="st0" points="512,255.996 448.702,204.365 477.704,128.003 397.063,114.933 384,34.3 307.639,63.302 256,0.003 204.361,63.302 128.007,34.3 114.937,114.933 34.303,128.003 63.298,204.365 0,255.996 63.298,307.628 34.303,383.997 114.937,397.066 128.007,477.7 204.361,448.698 256,511.997 307.639,448.698 384,477.7 397.063,397.066 477.704,383.997 448.702,307.628 "></polygon></g>
+                        </g>
+                    </svg>
+                    Redemption
+                </button>
+                <button class="ability-btn" onclick="showAbility('R')">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(-45)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M13.03 14.156V60.47l119.782 144c10.884-12.14 22.31-24.247 34.282-36.22 11.13-11.13 22.32-21.773 33.53-31.938L54.065 14.156H13.03zm432.533 5.97c-2.307.043-4.7.183-7.188.405-19.907 1.777-44.893 9.52-72.656 22.782-45.372 21.676-98.133 57.952-150.564 105.126l-.03-.032c-.96.864-1.918 1.754-2.876 2.625-1.927 1.75-3.856 3.504-5.78 5.282-.034.03-.063.064-.095.094-2.795 2.583-5.585 5.17-8.375 7.813-.107.1-.205.21-.313.31-2.9 2.75-5.796 5.562-8.687 8.376-2.902 2.825-5.797 5.674-8.688 8.563-.078.077-.17.14-.25.218l-.812.812C116.164 245.746 68.015 312.14 41.5 367.53c-13.316 27.82-21.125 52.866-22.938 72.814-1.812 19.948 2.15 34.025 10.97 42.844 8.818 8.818 22.895 12.78 42.843 10.968 19.948-1.812 44.995-9.59 72.813-22.906 36.475-17.46 77.708-44.312 119.687-78.625l-13-15.625c-76.125 63.634-142.623 97.127-161.97 77.78-21.25-21.25 21.226-99.45 97.407-184.75l.344.408c12.673-14.077 26.176-28.306 40.438-42.563 12.84-12.838 25.715-25.043 38.47-36.594l-.408-.343c86.176-77.464 165.56-120.875 187-99.437 19.556 19.554-14.89 87.342-79.875 164.5l15.658 13.03c35.244-42.798 62.73-84.904 80.468-122.03 13.264-27.763 21.037-52.75 22.813-72.656 1.775-19.907-2.235-33.953-11.064-42.78-7.725-7.726-19.446-11.746-35.594-11.44zM281.03 203.343c-13.175 11.87-26.468 24.473-39.75 37.75-14.714 14.71-28.594 29.393-41.56 43.875l66.436 79.874c-.017.014-.045.016-.062.03l13.125 15.75.03-.03 46.03 55.344c-25.77 6.714-52.722 5.31-77.03-7.657 4.94 6.544 9.707 13.083 15.72 19.095 58.928 58.93 146.78 66.75 196.092 17.438 49.314-49.314 41.523-137.165-17.406-196.094-3.683-3.685-6.796-7.407-10.687-10.69-2.463-2.075-5.342-3.71-7.876-5.624 14.742 25.24 16.597 52.502 9.625 78.22L281.03 203.343z"></path>
+                        </g>
+                    </svg>
+                    Spark!
+                </button>
+            </div>
+            <div class="divider"></div>
+            <div class="abilities-right">
+                <h2 id="ability-title">Hammer of Guilt</h2>
+                <p style="color: white; font-size: 17px;" id="ability-description">
+                    Pins down with the hammer, dealing damage and stuns for one round by 10% chance.
+                </p>
+            </div>            
+        </div>
+
+        <div class="skins-container">
+            <div class="skins-left">
+                <h3>— SKINS —</h3>
+                <button class="skin-btn active" onclick="showSkin(1)">
+                    Base Eunar
+                </button>
+                <!-- <button class="skin-btn" onclick="showSkin(2)">
+                    Skin 2
+                </button>
+                <button class="skin-btn" onclick="showSkin(3)">
+                    Skin 3
+                </button>
+                <button class="skin-btn" onclick="showSkin(4)">
+                    Skin 4
+                </button> -->
+            </div>
+            <div class="divider"></div>
+            <div class="skins-right">
+                <img id="skin-img" src="../../../img/Mayhem/splash_arts/eunar.png" alt="Skin 1" />
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="../characters/demona.html" class="page-btn page-1">Demona</a>
+            <a href="../characters.html" class="page-btn back-btn">Back to Character List</a>
+            <a href="../characters/ezio.html" class="page-btn page-2">Ezio</a>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="copyright">&copy; 2024 The Twilight.<br>All rights reserved.</span>
+            <img src="../../../img/logo.png" alt="The Twilight Logo" class="footer-logo" />
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+</div>
+
+</body>
+
+</html>
